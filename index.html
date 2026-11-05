@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Курманбек — портфолио</title>
+  <meta name="description" content="Портфолио Курманбека: сайты, аватарки и первый рабочий опыт.">
+
+  <!-- Иконка вкладки -->
+  <link rel="icon" type="image/png" href="./WhatsApp Image 2026-10-29 at 21.48.11.jpeg">
+  <link rel="apple-touch-icon" href="./WhatsApp Image 2026-10-29 at 21.48.11.jpeg">
+
+  <!-- Выставляем сохранённую тему до загрузки стилей, чтобы страница не мигала -->
+  <script>
+    try {
+      document.documentElement.setAttribute(
+        'data-theme',
+        localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+      );
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <nav class="nav" aria-label="Главное меню">
+      <ul class="nav__list" id="menu">
+        <li><a href="#home" class="nav__link">Дом</a></li>
+        <li><a href="#about" class="nav__link">Обо мне</a></li>
+        <li><a href="#works" class="nav__link">Опыт и работы</a></li>
+        <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+        <li><a href="#latest" class="nav__link">Проекты</a></li>
+        <li><a href="#contact" class="nav__link">Связаться со мной</a></li>
+      </ul>
+
+      <img class="nav__logo" src="./Ala-Too_International_University_Seal.png" alt="Логотип Ала-Тоо">
+
+      <!-- Три линии -->
+      <button class="nav__burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="section section--a hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title">Меня зовут Курманбек</h1>
+          <p class="hero__desc">
+            Студент 2 курса колледжа Ала-тоо, 16 лет, учусь на
+            ПОВТАС (Программное обеспечение вычислительной техники и
+            автоматизированных систем)
+          </p>
+          <a href="#contact" class="btn">Давайте начнём <span class="btn__arrow">›</span></a>
+
+          <p class="hero__skills-title">Умею работать с:</p>
+          <ul class="skills">
+            <li class="skills__item"><img src="./10953450.webp" alt="Alight Motion"></li>
+            <li class="skills__item"><img src="./capcut-logo-png_seeklogo-437025.png" alt="CapCut"></li>
+            <li class="skills__item"><img src="./Visual_Studio_Code_1.35_icon.svg.webp" alt="VS Code"></li>
+            <li class="skills__item"><img src="./IntelliJ_IDEA_Icon.svg.webp" alt="IntelliJ IDEA"></li>
+          </ul>
+        </div>
+
+        <div class="hero__photo">
+          <img src="./WhatsApp Image 2026-10-26 at 19.47.18.jpeg" alt="Фото Курманбек">
+        </div>
+      </div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section class="section section--b" id="about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+
+        <div class="about reveal">
+          <p class="about__text">
+            Увлекаюсь волейболом и футболом, также люблю кодить.
+            Сейчас учусь в Ала-Тоо колледже на ПОВТАС.
+          </p>
+
+          <ul class="about__list">
+            <li class="about__card"><span class="about__emoji">🏐</span> Волейбол</li>
+            <li class="about__card"><span class="about__emoji">⚽</span> Футбол</li>
+            <li class="about__card"><span class="about__emoji">💻</span> Кодинг</li>
+            <li class="about__card"><span class="about__emoji">🎓</span> Колледж Ала-Тоо, ПОВТАС</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОПЫТ И РАБОТЫ -->
+    <section class="section section--a" id="works">
+      <div class="container">
+        <h2 class="section__title">Опыт и работы</h2>
+
+        <!-- Цифры -->
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__num">20+</span>
+            <span class="stat__label">аватарок</span>
+          </div>
+        </div>
+
+        <article class="work reveal">
+          <div class="work__text">
+            <h3>Стажировка</h3>
+            <p>Я стажировался в кофейне один месяц, когда мне было 15 лет. Это был мой первый опыт работы: я учился общаться с клиентами, работать в команде и справляться с задачами в темпе.</p>
+          </div>
+          <div class="work__img">
+            <img src="./images.jfif" alt="Стаканы кофе из кофейни" loading="lazy">
+          </div>
+        </article>
+
+        <article class="work work--reverse reveal">
+          <div class="work__text">
+            <h3>Аватарка</h3>
+            <p>Это моя последняя работа по аватаркам, и она же самая любимая. Я использовал Photoroom, Alight Motion, Wink, Pinterest и Tenada. Здесь я собрал всё, чему научился: работа с цветом, слоями и эффектами.</p>
+          </div>
+          <div class="work__img">
+            <img src="./WhatsApp Image 2026-10-26 at 20.35.47.jpeg" alt="Работа: аватарка" loading="lazy">
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <div class="work__text">
+            <h3>Мой первый сайт</h3>
+            <p>В 8 классе я сделал свой первый сайт. Он нерабочий и сделан по подсказкам учителя, но с него я начал интересоваться веб-разработкой.</p>
+          </div>
+          <div class="work__img work__img--wide">
+            <img src="./image 24.png" alt="Скриншот первого сайта" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="section section--b" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+
+        <div class="reviews">
+          <blockquote class="review reveal">
+            <p class="review__text">Заходила в кофейню, и осталась в полном восторге от обслуживания! Курманбек очень вежливый, внимательный и позитивный. Всё сделано быстро, качественно и с улыбкой. Приятно приходить в места с таким сервисом. Обязательно вернусь еще! 5 звёзд!</p>
+            <footer class="review__footer">
+              <span class="review__name">Катя</span>
+              <span class="stars" data-rating="5"></span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review reveal">
+            <p class="review__text">Заказывал у Курманбека аватарку. Сделал всё очень круто и стильно! Отдельный плюс — за демократичную и приятную цену, вышло совсем недорого. Снял одну звезду только за небольшую задержку по времени, но результат всё равно отличный. Спасибо!</p>
+            <footer class="review__footer">
+              <span class="review__name">necson</span>
+              <span class="stars" data-rating="4"></span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review reveal">
+            <p class="review__text">Курманбек делал для меня аватарку. Работа просто пушка! Учёл все пожелания, сделал быстро и именно так, как я хотел. Выглядит очень сочно и качественно. Максимальная оценка — 5 звёзд, всем рекомендую!</p>
+            <footer class="review__footer">
+              <span class="review__name">Do6pblu^</span>
+              <span class="stars" data-rating="5"></span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review reveal">
+            <p class="review__text">Посмотрел портфолио Курманбека — это просто высший уровень! Очень сильные, продуманные и стильные работы. Сразу видно профессиональный подход к делу и внимание к деталям. Если оценивать, то это все 50 звёзд из 5! Мощное портфолио!</p>
+            <footer class="review__footer">
+              <span class="review__name">Кубаныч Джыргалбеков</span>
+              <span class="stars" data-rating="5" data-label="5/5"></span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОЕКТЫ -->
+    <section class="section section--a" id="latest">
+      <div class="container container--narrow">
+        <h2 class="section__title">Проекты</h2>
+
+        <article class="project reveal">
+          <img class="project__img" src="./Снимок экрана (4).png" alt="Сайт FIGHTCLUB" loading="lazy">
+          <h3>FIGHTCLUB</h3>
+          <p>Я сделал этот сайт чтобы потренировать свои навыки.</p>
+          <a href="https://kurmanbek2.github.io/box-/" class="btn" target="_blank" rel="noopener">Открыть сайт <span class="btn__arrow">›</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- СВЯЗАТЬСЯ -->
+    <section class="section section--b" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title">Связаться со мной</h2>
+        <p class="section__subtitle">Остались вопросы или хотите заказать оформление? Напишите мне, и я отвечу в ближайшее время</p>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__group">
+            <label for="email">Почта</label>
+            <input type="email" id="email" name="email" placeholder="Напишите сюда свою почту" required>
+            <span class="form__error" data-for="email"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="phone">Номер</label>
+            <input type="tel" id="phone" name="phone" placeholder="Напишите сюда свой номер телефона">
+            <span class="form__error" data-for="phone"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="6" placeholder="Напишите сюда сообщение" required></textarea>
+            <span class="form__error" data-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn--full">Отправить <span class="btn__arrow">›</span></button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- соцсети -->
+  <footer class="footer">
+    <ul class="socials">
+      <li>
+        <!-- Instagram -->
+        <a class="social" href="https://instagram.com/sanor.r1n" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <!-- TikTok -->
+        <a class="social" href="https://www.tiktok.com/@sanor1_r1.in" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 3v12a4.5 4.5 0 1 1-4.5-4.5"/>
+            <path d="M16 3c.3 2.4 1.9 4.2 4.5 4.5"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <!-- WhatsApp -->
+        <a class="social" href="https://wa.me/996505999853" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+            <path d="M9 9.5c.5 2 2.5 4.5 5.5 5.5l1.5-1.5-2-1.2-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1L10 7.5 9 9.5z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- Кнопка: светлая / тёмная тема (слева снизу) -->
+  <button class="fab fab--theme" id="theme-toggle" type="button" aria-label="Включить светлую тему">
+    <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+    </svg>
+    <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+    </svg>
+  </button>
+
+  <!-- Кнопка: наверх (справа снизу) -->
+  <button class="fab fab--top" id="to-top" type="button" aria-label="Наверх">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
