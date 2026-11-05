@@ -8,7 +8,7 @@
   --border: #2a2a2a;
   --green: #3f9100;
 }
-
+ 
 /* Светлая тема: меняем только значения переменных */
 [data-theme="light"] {
   --bg: #ffffff;
@@ -18,12 +18,12 @@
   --muted: #6b6b6b;
   --border: #dcdcdc;
 }
-
+ 
 /* ===== 2. Общее ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-
+ 
 body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
@@ -31,26 +31,26 @@ body {
   background: var(--bg);
   color: var(--text);
 }
-
+ 
 h1, h2, h3 { font-family: "Raleway", sans-serif; font-weight: 800; }
 h1, h2, h3, p { margin-bottom: 16px; }
 p { color: var(--muted); }
-
+ 
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 button { font: inherit; cursor: pointer; }
-
+ 
 .container { width: min(1100px, 90%); margin: 0 auto; }
 .container--narrow { width: min(800px, 90%); }
-
+ 
 /* ===== 3. Секции ===== */
 .section { padding: 80px 0; background: var(--bg); }
 .section--b { background: var(--bg-alt); }
-
+ 
 .section__title { text-align: center; font-size: 40px; margin-bottom: 40px; }
 .section__subtitle { text-align: center; margin-bottom: 40px; }
-
+ 
 /* ===== 4. Кнопка ===== */
 .btn {
   display: inline-block;
@@ -63,10 +63,10 @@ button { font: inherit; cursor: pointer; }
 }
 .btn:hover { transform: translateY(-4px); }
 .btn--full { width: 100%; }
-
+ 
 /* ===== 5. Шапка ===== */
 .header { position: sticky; top: 0; z-index: 10; padding: 0 40px; background: var(--bg); }
-
+ 
 /* Серая панель с закруглёнными нижними углами, по центру */
 .nav {
   display: flex;
@@ -82,10 +82,10 @@ button { font: inherit; cursor: pointer; }
 .nav__link { color: var(--muted); }
 .nav__link:hover { color: var(--text); }
 .nav__logo { width: 88px; }
-
+ 
 .nav__burger { display: none; background: none; border: none; }
 .nav__burger span { display: block; width: 28px; height: 3px; margin: 6px 0; background: var(--text); }
-
+ 
 /* ===== 6. Hero и «Обо мне» ===== */
 /* auto-fit: колонки сами встают друг под друга, когда не хватает места */
 .hero__inner,
@@ -95,10 +95,10 @@ button { font: inherit; cursor: pointer; }
   gap: 40px;
   align-items: center;
 }
-
+ 
 .hero__title { font-size: 48px; }
 .hero__skills-title { margin-top: 40px; }
-
+ 
 .hero__photo img {
   width: 100%;
   max-width: 400px;
@@ -107,7 +107,7 @@ button { font: inherit; cursor: pointer; }
   object-fit: cover;
   border-radius: 50%;
 }
-
+ 
 /* Одинаковые карточки */
 .skills__item,
 .about__card,
@@ -117,33 +117,39 @@ button { font: inherit; cursor: pointer; }
   border-radius: 8px;
   padding: 20px;
 }
-
+ 
 .skills, .about__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 16px;
 }
 .about__list { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-
+ 
 .skills__item { display: grid; place-items: center; }
 .skills__item img { height: 48px; }
-
+ 
 .about__card { display: flex; align-items: center; gap: 12px; font-weight: 600; }
 .about__emoji { font-size: 28px; }
-
+ 
 /* ===== 7. Опыт и работы ===== */
 .stats { text-align: center; }
 .stat__num { display: block; font-size: 56px; font-weight: 800; color: var(--green); }
-
+ 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 100px;
 }
-.work__img img { max-height: 400px; margin: auto; border-radius: 6px; }
-
+.work h3 { font-size: 36px; }
+ 
+/* Каждая вторая работа: картинка слева, текст справа */
+.work--reverse .work__img { order: -1; justify-self: start; }
+ 
+.work__img img { max-height: 430px; margin: auto; border-radius: 4px; }
+.work__img--wide img { width: 100%; max-width: 670px; max-height: none; }
+ 
 /* ===== 8. Отзывы ===== */
 .reviews {
   display: grid;
@@ -153,20 +159,20 @@ button { font: inherit; cursor: pointer; }
 .review { display: flex; flex-direction: column; justify-content: space-between; }
 .review__footer { display: flex; align-items: center; gap: 16px; }
 .review__name { font-weight: 600; }
-
+ 
 .stars { font-size: 24px; }
 .star { color: #ffd400; }
 .star--off { color: var(--border); }
 .stars__label { margin-left: 8px; }
-
+ 
 /* ===== 9. Проекты ===== */
 .project__img { width: 100%; border-radius: 6px; margin-bottom: 24px; }
-
+ 
 /* ===== 10. Форма ===== */
 .form { max-width: 500px; margin: 0 auto; }
 .form__group { margin-bottom: 16px; }
 .form label { display: block; margin-bottom: 6px; font-weight: 600; }
-
+ 
 .form input, .form textarea {
   width: 100%;
   padding: 14px;
@@ -178,16 +184,16 @@ button { font: inherit; cursor: pointer; }
 }
 .form input:focus, .form textarea:focus { outline: none; border-color: var(--green); }
 .form input.is-invalid, .form textarea.is-invalid { border-color: #e5484d; }
-
+ 
 .form__error { display: block; font-size: 14px; color: #ff6b6b; }
 .form__status { margin-top: 16px; text-align: center; }
 .form__status.is-success { color: #4fb21e; }
 .form__status.is-error { color: #ff6b6b; }
-
+ 
 /* ===== 11. Футер ===== */
 .footer { padding: 30px 20px; background: var(--panel); }
 .socials { display: flex; justify-content: center; gap: 20px; }
-
+ 
 .social {
   display: grid;
   place-items: center;
@@ -199,7 +205,7 @@ button { font: inherit; cursor: pointer; }
 }
 .social:hover { color: var(--green); border-color: var(--green); }
 .social svg { width: 26px; height: 26px; }
-
+ 
 /* ===== 12. Плавающие кнопки ===== */
 .fab {
   position: fixed;
@@ -214,25 +220,29 @@ button { font: inherit; cursor: pointer; }
   border-radius: 50%;
 }
 .fab .icon { width: 24px; height: 24px; }
-
+ 
 .fab--theme { left: 20px; }
 .fab--top { right: 20px; display: none; background: var(--green); color: #fff; }
 .fab--top.is-visible { display: grid; }
-
+ 
 /* Солнце в тёмной теме, луна в светлой */
 .icon--moon { display: none; }
 [data-theme="light"] .icon--sun { display: none; }
 [data-theme="light"] .icon--moon { display: block; }
-
+ 
 /* ===== 13. Телефон: меню прячется за три линии ===== */
 @media (max-width: 1100px) {
   .reviews { grid-template-columns: 1fr; }
-
+ 
+  /* работы: одна колонка, картинка всегда под текстом */
+  .work { grid-template-columns: 1fr; gap: 30px; margin-top: 70px; }
+  .work--reverse .work__img { order: 0; justify-self: center; }
+ 
   .header { padding: 0; }
   .nav { padding: 10px 20px; border-radius: 0; }
   .nav__logo { width: 56px; }
   .nav__burger { display: block; }
-
+ 
   .nav__list {
     display: none;
     position: absolute;
